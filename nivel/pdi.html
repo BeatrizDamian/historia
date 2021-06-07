@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Nivel Difícil </title>
+      <link rel="icon" href="../img/icono.png"/>
+      <link href="../estilo/bootstrap.mintwo.css" rel="stylesheet">
+      <link href="../estilo/styletwo.css" rel="stylesheet">
+      <link href="../estilo/botonp.css" rel="stylesheet">
+    </head>
+
+  <body>
+    <main role="main" id="nav" class="container" >
+      <div class="row">
+        <div class="col-12">
+                <a href="../index.html" class="color-link"><strong>Inicio</strong></a></li>
+                <a href="menuep.html"  class="color-link"><strong>Menú</strong></a></li>
+          </div>
+        </div>
+    </main>
+
+    <main class="main" id= "apps" class="container-fluid">
+      <div clas="row">
+      <div class="col-15">
+      <a @click="mostrartwo" href="#" class="btn btn-warning"><strong>Instrucción</strong></a>
+    </div>
+    <div>
+</main>
+
+
+	<div id= "app"  class="container" >
+	<div class="row">
+    <div class="col-sm-12">
+      <h3 class=" cuadroColor text-center text-info"> Ubicación temporal y espacial del virreinato de Nueva España.</h3>
+<br>
+<br>
+
+			<ul id="horizontal-list centrado">
+
+				<!-- Aca va la lista de las letras digitadas -->
+				<button v-for="item in palabra_escrita" type="button" class="cuadroColor cuadro text-center"><span class="badge">{{item}}</span>
+				</button>
+				<button></button>
+
+			</ul>
+
+			</div>	<!-- End primera columna -->
+
+			<div class="container text-center">
+
+			<div class="col-sm-12">
+
+				<!-- Aca va el teclado -->
+				<span v-for="(letra,index) in letras">
+
+				<button v-on:click="comparar(letra,index)" class="teclado" v-bind:key="index" v-bind:disabled="botones[index]" v-bind:class="{verde:color_botones[index]=='verde',rojo:color_botones[index]=='rojo'}">{{letra}}</button>
+				</span>
+
+			</div>	<!-- End segunda columna -->
+
+			</div>	<!-- End container text-center -->
+
+		</div>	<!-- End row -->
+
+	<div class="row">
+    <div class="col-xs-8 col-sm-8 col-md-8">
+      	<br>
+			<div>
+				<img v-bind:src="'../anime/girlone/'+contador_errores+'.png'" alt="">
+			</div>
+
+		</div>	<!-- End tercera columna -->
+
+		<div class="co-xs-4 col-sm-4 col-md-4">
+			<br>
+			<label class="letra"><strong>Puntos:</strong></label>
+			<input type="text" class="form-control text-center" v-model="contador_aciertos" >
+			<br>
+			<label class="letra"><strong>Errores:</strong></label>
+			<input type="text" class="form-control text-center" v-model="contador_errores" size="3">
+			<br>
+      <div class="row">
+    <ul>
+      <button class="btn btn-primary col text-center" @click="generarAleatorio"><strong>Volver a Jugar</strong></button></ul>
+
+
+    </div>
+  </div>	<!-- En cuarta columna -->
+
+  </div>	<!-- End row -->
+</div>
+<footer id="pie"  >
+<strong>
+  PISTAS: <BR>
+Conquista de Tenochtitlan;
+Hacia finales del siglo XVI;
+Territorio conquistado;
+Nueva España.<br>
+Derechos Reservados &copy; 2021.
+</strong>
+
+
+
+<script src="../js/vuetwo.js"></script>
+<script src="../js/logicadi.js"></script>
+<script src="../js/sweetalert2.all.min.js"></script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/inf.js"></script>
+
+</body>
+</html>

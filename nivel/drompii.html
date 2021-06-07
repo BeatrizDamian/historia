@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nivel Difícil</title>
+      <link href="../estilo/main.css" rel="stylesheet">
+      <link href="../estilo/bootstrapgame.min.css" rel="stylesheet">
+      <link href="../estilo/bootstrap-theme.css" rel="stylesheet">
+      <link href="../estilo/botonp.css" rel="stylesheet">
+      <link href="../estilo/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <main role="main" id="nav"class="container"  >
+          <div class="row">
+              <div class="col-12">
+                  <a href="../index.html"class="color-link"><strong>Inicio</strong></a>
+                  <a href="menufh.html"><strong>Menú</strong></a>
+
+                </div>
+            </div>
+        </main>
+  <main role="main" id="app"class="container"  >
+    <div class="row">
+      <div class="col-12">
+        <a @click="InstruccionBloqueiib" href="#" class="btn btn-warning">Instrucción</a>
+      </div>
+    </div>
+  </main>
+
+  <svg width="600" height="600" id="entorno">
+        <g id="fondo"><image xlink:href="../img/BB.png" width="400" height="400" x="200" y="100"></g>
+          <g class="historia" id="0"><image xlink:href="../img/B001.png" class="movil"></g>
+          <g class="historia" id="1"><image xlink:href="../img/B002.png" class="movil"></g>
+          <g class="historia" id="2"><image xlink:href="../img/B003.png" class="movil"></g>
+          <g class="historia" id="3"><image xlink:href="../img/B004.png" class="movil"></g>
+          <g class="historia" id="4"><image xlink:href="../img/B005.png" class="movil"></g>
+          <g class="historia" id="5"><image xlink:href="../img/B006.png" class="movil"></g>
+          <g class="historia" id="6"><image xlink:href="../img/B007.png" class="movil"></g>
+          <g class="historia" id="7"><image xlink:href="../img/B008.png" class="movil"></g>
+          <g class="historia" id="8"><image xlink:href="../img/B009.png" class="movil"></g>
+    </svg>
+  <strong>
+    <footer id="pie" class="container"  >
+    <strong>
+      La imagen de este códice muestra el tributo recibido por Antonio de Mendoza.<br>
+      El texto describe varios productos, entre ellos, oro y maíz. Códice Kingsborough, siglo XVI.<br>
+      Derechos Reservados &copy; 2021.
+    </strong>
+    </footer>
+    <audio id="virrey" src="../sonido/virrey.mp3"></audio>
+    <script src="../js/cabezacc.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/ayuda.js"></script>
+</body>
+</html>

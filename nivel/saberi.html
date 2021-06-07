@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lección 1</title>
+    <link rel="icon" href="../img/icono.png"/>
+    <link href="../estilo/bootstrapgame.min.css" rel="stylesheet">
+    <link href="../estilo/bootstrap-theme.css" rel="stylesheet">
+    <link href="../estilo/style.css" rel="stylesheet">
+    <link href="../estilo/botonp.css" rel="stylesheet">
+</head>
+<body>
+    <br>
+    <div id="nav" class="container">
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <a href="../index.html" class="color-link"><strong>Inicio</strong></a>
+                <span style="color:whitesmoke"></strong><a href="saber.html" class="color-link"><strong>Enseñanza</strong></a>
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <h2 class="text-center"><strong>Lección 1</strong></h2>
+            <h3 class="text-center"><strong> Bloque Cuatro :Ubicación temporal y espacial  del  virreinato de Nueva España</strong></h3>
+        </div>
+        <br>
+        <br>
+        <main role="main" class="container-fluid" id="app">
+            <br>
+            <div v-for="(fila, indiceFila) in memorama" :key="indiceFila" class="row">
+                <div :key="indiceFila+''+indiceImagen" class="col-5" v-for="(imagen, indiceImagen) in fila">
+                    <div class="mb-5">
+                        <img @click="voltear(imagen.descripcion)"
+                        :src="imagen.ruta" class="card-img-top img-fluid img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/scriptmi.js"></script>
+</body>
+</html>
