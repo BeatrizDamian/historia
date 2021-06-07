@@ -1,0 +1,52 @@
+
+.cartel {
+	  background-image: url("../img/bg");
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+	.cartel>div{
+	  font-size: 10px;
+	  font-family: 'Chela One', sans serif;
+	  animation: fade 3s;
+	  line-height: 30px;
+	  margin-top: 5px;
+	}
+
+#entorno {
+	display: block;
+	margin: 0 auto;
+	background: rgb(63,94,251);
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+border-top-width: 5px;
+border-right-width: 5px;
+border-bottom-width: 5px;
+border-left-width: 5px;
+border-top-style: dashed;
+border-right-style: dashed;
+border-bottom-style: dashed;
+border-left-style: dashed;
+border-top-color: #FF6600;
+border-right-color: #FF6600;
+border-bottom-color: #FF6600;
+border-left-color : #FF6600;
+}
+
+#fondo {
+	opacity: 0.4;
+}
+
+}
+#body{
+width: 960px;
+margin: 0 auto;
+background: rgb(33,94,231);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 150%);
+
+}
+#countdown {
+    font-size: 2em;
+		display: flex;
+	  align-items: center;
+	  justify-content: center;
+}

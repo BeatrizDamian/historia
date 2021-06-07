@@ -1,0 +1,126 @@
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	text-decoration: none;
+	color: rgb(0, 162, 255);
+	background-image: url(../img/historia.jpg);
+  }
+
+  #app{
+    display: block;
+  	margin: 0 auto;
+    background:url("../img/fondo.png");
+    border:5px dashed #FF6600;
+    width: 600px;
+    height: 550;
+    background-position:center;
+
+
+  }
+  .teclado{
+    margin-top:10px;
+    margin-left:30px;
+    width: 28px;
+    border:2px solid #FF6600;
+    border-radius: -100px;
+    background-color: #ebf5fb;
+    text-align: center;
+    cursor: pointer;
+	  font-family:  Arial Black 60px ;
+		font-size: larger;
+  }
+	.letra{
+	  text-align: center;
+	  color: black;
+	}
+  .linea{
+    margin-left:10px;
+
+  }
+	.btn-info {
+	    border:none;
+	    background:#ff9646;
+	    display:block;
+	    margin-left:auto;
+	    margin-right:auto;
+	}
+	.pie{
+	  clear: both;
+	  text-align: center;
+	  padding: 20px;
+	  text-align: center;
+	  color: black;
+	}
+
+	.btn-warning {
+	    float:right;
+	    border:none;
+	    color:white;
+	}
+	.btn-ifn {
+	    float:right;
+	    border:none;
+	    color:white;
+	}
+
+
+  ul#horizontal-list li {
+    display:inline;
+  }
+  ul#horizontal-list button{
+    margin-left: 10px;
+    width: 40px;
+  }
+
+  .cuadro{
+
+    width: 30px;
+    margin-left: 6px;
+    text-align: center;
+    padding-left:3px;
+    font-size: 1em;
+    border-bottom: double;
+  }
+
+	.cuadroColor{
+		margin-top:20px;
+    margin-left:25px;
+    width: 30px;
+    background-color:#ebf5fb;
+		border:2px solid #9933FF;
+		border-radius: -100px;
+  }
+  .rojo{
+    background-color:red;
+  }
+
+
+  .verde{
+    background-color: green;
+  }
+
+	img.card-img-top {
+	    object-fit:cover;
+	    cursor:pointer;
+	    max-height:150px !important;
+	    max-width:150px !important;
+
+
+	img.card-img-top.girar {
+	    animation:fadein 2s;
+	}
+
+	@keyframes fadein {
+	    from {
+	        opacity: 0;
+	    }
+	    to {
+	        opacity: 1;
+	    }
+	}

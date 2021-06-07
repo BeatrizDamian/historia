@@ -1,0 +1,135 @@
+
+#pie {
+clear: both;
+text-align: center;
+padding: 20px;
+border-top: 2px solid #999999;
+text-align: center;
+color: black;
+}
+body {
+    background: url("../img/historia.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+	  background-size:cover;
+	  display:block;
+	  height:100%;
+    width:100%;
+    text-decoration: none;
+    color:rgb(127,0,0);
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+.logoMenu {
+    width:50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.logoTitulo {
+    width:100%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.logoMenu2 {
+    width:50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.logonivel {
+    width:10%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.btn-primary {
+    border:none;
+    background:#008888;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.btn-secondary {
+    display:inline-block;
+    background:#008888;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.btn-success {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.pie{
+  clear: both;
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+  color: black;
+
+}
+
+.btn-info {
+    border:none;
+    background:#ff9646;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.btn-info:hover {
+    border:none;
+    background:#ff6d46;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.color-link {
+    border:none;
+    background:none;
+    color:whitesmoke;
+}
+
+.color-link:hover {
+    border:none;
+    background:none;
+    color:rgb(0, 162, 255);
+}
+
+.btn-warning {
+    float:right;
+    border:none;
+    color:white;
+}
+
+img.card-img-top {
+    object-fit:cover;
+    cursor:pointer;
+    max-height:150px !important;
+    max-width:150px !important;
+}
+
+img.card-img-top.girar {
+    animation:fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
