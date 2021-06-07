@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menú</title>
+    <link href="estilo/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo/bootstrap-theme.css" rel="stylesheet">
+    <link href="estilo/style.css" rel="stylesheet">
+    <link href="estilo/botonp.css" rel="stylesheet" >
+    <style>
+        #menu{
+            padding: 10px;
+            border-radius: 4px;
+        }
+        #menu ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block;
+            width: 100%;
+        }
+        #menu ul li{
+            display: inline;
+        }
+        #menu ul li a{
+            color: rgb(255,0,0);
+            text-decoration: none;
+        }
+        #menu ul li a:hover{
+            color: red;
+            text-decoration: none;
+        }
+
+        </style>
+</head>
+<body>
+    <br>
+    <div id="app" class="container">
+      <div id="nav">
+            <ul>
+                <a @click="mostrarCredito" href="#"><strong>Crédito</strong></a>
+              </ul>
+        </div>
+        <br>
+        <div class="row">
+              <a href="index.html"><img class="logoTitulo" src="img/TITULO.png" alt=""></a>
+        </div>
+        <br>
+        <div class="row">
+            <a href="index.html"><img class="logoMenu" src="img/hist-4to.jpg" alt=""></a>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <a href="nivel/saber.html" class=" btn btn-primary "><strong> Enseñanza de Historia </strong></a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <a href="nivel/menufh.html" class=" btn btn-primary"><strong>Juego Formando la Historia</strong></a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-12">
+              <a href="nivel/menuep.html" class="btn btn-primary"><strong>Juego Encuentra la Palabra Oculta</strong></a>
+
+          </div>
+      </div>
+</div>
+
+    <br>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/credito.js"></script>
+</body>
+</html>
